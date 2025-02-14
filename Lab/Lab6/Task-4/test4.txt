@@ -1,0 +1,22 @@
+TRANSFORM_OPT:
+Default:
+transform_opt tests took   0.112 wall seconds.
+
+Adding restrict:
+transform_opt tests took   0.112 wall seconds.
+
+Replace np with NP:
+transform_opt tests took   0.112 wall seconds.
+
+int NP to const int NP:
+transform_opt tests took   0.024 wall seconds.
+
+int NP but inside function definition:
+transform_opt tests took   0.024 wall seconds.
+
+const int NP but inside function definition:
+transform_opt tests took   0.024 wall seconds.
+
+TAKEAWAY:
+* Declare small fixed constants as const at the global level to help the compiler with better optimizations.
+* When possible, move constant values inside functions if they don’t need global scope.

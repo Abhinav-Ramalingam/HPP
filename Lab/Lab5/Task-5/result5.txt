@@ -1,0 +1,19 @@
+NO_INLINE:
+O0:
+./inline  0.01s user 0.01s system 87% cpu 0.013 total
+
+O2:
+./inline  0.00s user 0.01s system 81% cpu 0.011 total
+
+O3:
+./inline  0.00s user 0.00s system 82% cpu 0.008 total
+
+INLINE:
+O0:
+./inline  0.13s user 0.00s system 99% cpu 0.130 total
+
+O2:
+./inline  0.00s user 0.01s system 82% cpu 0.010 total
+
+O3:
+./inline  0.00s user 0.01s system 82% cpu 0.009 total

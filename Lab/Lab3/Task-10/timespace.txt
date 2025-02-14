@@ -1,0 +1,5 @@
+Length of String	No. of Permutations	Total Time (seconds)	Memory Usage (kilobytes)
+        10	            3,628,800	        0.053394	                1,064,960
+        11	            39,916,800	        0.328450	                1,097,728
+        12	            479,001,600	        3.589779	                1,064,960
+        13	            6,227,020,800	    47.848036	                1,064,960

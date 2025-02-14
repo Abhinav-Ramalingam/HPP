@@ -1,0 +1,2 @@
+Best time in wall seconds: 11.143078 (seconds)
+CPU Model: Intel(R) Xeon(R) CPU           E5520  @ 2.27GHz

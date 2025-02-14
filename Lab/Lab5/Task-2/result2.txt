@@ -1,0 +1,21 @@
+SHORT_CIRCUIT:
+MAIN:
+./short-circuit  0.14s user 0.01s system 98% cpu 0.150 total
+
+OPTIMISED:
+./short-circuit  0.09s user 0.01s system 96% cpu 0.102 total
+
+OPTIMISED WITH -O3:
+./short-circuit  0.00s user 0.00s system 57% cpu 0.001 total
+
+
+
+BOUNDS:
+MAIN:
+./bounds  0.22s user 0.01s system 99% cpu 0.229 total
+
+OPTIMISED:
+./bounds  0.20s user 0.01s system 98% cpu 0.209 total
+
+OPTIMISED WITH -O3:
+./bounds  0.05s user 0.01s system 96% cpu 0.060 total

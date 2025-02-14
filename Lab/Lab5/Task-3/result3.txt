@@ -1,0 +1,28 @@
+NORMALIZED:
+gcc -Wall -O2 -o norms norms.c
+./norms
+1.000000e-35
+9.999999e-36
+gcc -Wall -O3 -o norms norms.c
+./norms
+1.000000e-35
+9.999999e-36
+gcc -Wall -Ofast -o norms norms.c
+./norms
+1.000000e-35
+9.999999e-36
+
+DENORMALIZED:
+gcc -Wall -O2 -o denorms denorms.c
+./denorms
+1.000000e-39
+9.999960e-40
+gcc -Wall -O3 -o denorms denorms.c
+./denorms
+1.000000e-39
+9.999960e-40
+gcc -Wall -Ofast -o denorms denorms.c
+./denorms
+1.000000e-39
+0.000000e+00
+

@@ -1,0 +1,40 @@
+MEMSET:
+Slow:
+./memset  0.17s user 0.00s system 99% cpu 0.176 total
+
+Fast:
+./memset  0.02s user 0.01s system 93% cpu 0.027 total
+
+LOOKUP:
+Slow:
+./lookup  0.32s user 0.01s system 99% cpu 0.330 total
+
+Fast:
+./lookup  0.11s user 0.01s system 98% cpu 0.123 total
+
+STRENGTH_REDUCTION:
+Normal:
+./strength_reduction  0.46s user 0.01s system 99% cpu 0.473 total
+
+Data Type Optimizations:
+./strength_reduction  0.45s user 0.01s system 99% cpu 0.461 total
+
+Strength Reducing Operations:
+./strength_reduction  0.37s user 0.01s system 99% cpu 0.374 total
+
+MATH_FUNCTIONS:
+pow(i, 0.5):
+./math_functions  0.34s user 0.01s system 99% cpu 0.343 total
+
+sqrt(i):
+./math_functions  0.06s user 0.01s system 97% cpu 0.070 total
+
+sqrtf(i):
+./math_functions  0.06s user 0.00s system 98% cpu 0.064 total
+
+OPERATIONS TIMINGS:
+./ops
+Addition time: 0.099386 seconds
+Subtraction time: 0.081540 seconds
+Multiplication time: 0.099492 seconds
+Division time: 0.247686 seconds

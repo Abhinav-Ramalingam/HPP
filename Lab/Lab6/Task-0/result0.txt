@@ -1,0 +1,36 @@
+CASE 1: 200 500000
+ModifyLow:
+./cachetest 200 500000  0.11s user 0.00s system 98% cpu 0.114 total
+ModifyWithStep8:
+./cachetest 200 500000  0.20s user 0.01s system 98% cpu 0.209 total
+
+CASE 2: 100 1000000
+ModifyLow:
+./cachetest 100 1000000  0.10s user 0.00s system 99% cpu 0.099 total
+ModifyWithStep8:
+./cachetest 100 1000000  0.17s user 0.00s system 99% cpu 0.177 total
+
+CASE 3: 50 2000000
+ModifyLow:
+./cachetest 50 2000000  0.09s user 0.00s system 99% cpu 0.097 total
+ModifyWithStep8:
+./cachetest 50 2000000  0.18s user 0.00s system 99% cpu 0.179 total
+
+CASE 4: 30 3000000
+ModifyLow:
+./cachetest 30 3000000  0.08s user 0.00s system 99% cpu 0.087 total
+ModifyWithStep8:
+./cachetest 30 3000000  0.16s user 0.00s system 99% cpu 0.162 total
+
+CASE 5: 20 5000000
+ModifyLow:
+./cachetest 20 5000000  0.09s user 0.00s system 99% cpu 0.093 total
+ModifyWithStep8:
+./cachetest 20 5000000  0.18s user 0.00s system 99% cpu 0.178 total
+
+CASE 6: 10 10000000
+ModifyLow:
+./cachetest 10 10000000  0.09s user 0.00s system 99% cpu 0.095 total
+
+ModifyWithStep8:
+./cachetest 20 5000000  0.18s user 0.00s system 99% cpu 0.179 total

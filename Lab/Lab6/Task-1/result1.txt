@@ -1,0 +1,33 @@
+MERGE_SORT 
+Sorting list with length 100000 took   0.022 wall seconds.
+Sorting list with length 200000 took   0.035 wall seconds.
+Sorting list with length 300000 took   0.050 wall seconds.
+
+BUBBLE_SORT
+Sorting list with length 100000 took   1.713 wall seconds.
+Sorting list with length 200000 took   5.922 wall seconds.
+Sorting list with length 300000 took  12.760 wall seconds.
+
+MERGE_SORT WITHOUT FREE
+Sorting list with length 100000 took   0.014 wall seconds.
+Sorting list with length 200000 took   0.021 wall seconds.
+Sorting list with length 300000 took   0.030 wall seconds.
+
+MERGE SORT USING SINGLE LIST TO STORE BOTH SUBARRAYS:
+Sorting list with length 100000 took   0.010 wall seconds.
+Sorting list with length 200000 took   0.025 wall seconds.
+Sorting list with length 300000 took   0.035 wall seconds.
+
+MERGE SORT USING STACK:
+Sorting list with length 100000 took   0.008 wall seconds.
+Sorting list with length 200000 took   0.019 wall seconds.
+Sorting list with length 300000 took   0.024 wall seconds.
+
+MERGE SORT WITH LESS RECURSIVE CALLS: (array size = 1045721)
+n = 10;     Sorting list with length 1045721 took   0.056 wall seconds.
+n = 100;    Sorting list with length 1045721 took   0.093 wall seconds.
+n = 500;    Sorting list with length 1045721 took   0.240 wall seconds.
+n = 1000;   Sorting list with length 1045721 took   0.480 wall seconds.
+n = 2000;   Sorting list with length 1045721 took   1.002 wall seconds.
+n = 5000;   Sorting list with length 1045721 took   2.541 wall seconds.
+n = 10000;  Sorting list with length 1045721 took   3.520 wall seconds.

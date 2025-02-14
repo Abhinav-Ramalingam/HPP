@@ -1,0 +1,6 @@
+F_OPT:
+Default:
+f_opt tests took   0.446 wall seconds.
+
+Avoiding Branches:
+f_opt tests took   0.137 wall seconds.

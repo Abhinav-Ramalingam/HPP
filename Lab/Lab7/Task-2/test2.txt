@@ -1,0 +1,9 @@
+F_OPT:
+Default: (Flag used = O2)
+f_opt tests took   0.813 wall seconds.
+
+Loop Unrolling with Manual Unroll Factor = 4: (Flag used = O2)
+f_opt tests took   0.118 wall seconds.
+
+Optimization from O2 to O3:
+f_opt tests took   0.117 wall seconds.

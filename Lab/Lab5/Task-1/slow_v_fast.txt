@@ -1,0 +1,19 @@
+WITHOUT -O3:
+slow
+Done. sum = 649785664285041.375
+./loop_invariants  0.37s user 0.05s system 73% cpu 0.713 total
+
+fast
+Done. sum = 649785664285041.375
+./loop_invariants  0.32s user 0.05s system 99% cpu 0.380 total
+
+WITH -O3:
+slow
+Done. sum = 649785664285041.375
+./loop_invariants  0.11s user 0.06s system 99% cpu 0.165 total
+(base) abhinavramalingam@Abhinavs-MacBook-Pro Task-1 % time ./loop_invariants
+
+fast
+Done. sum = 649785664285041.375
+./loop_invariants  0.11s user 0.06s system 98% cpu 0.167 total
+(base) abhinavramalingam@Abhinavs-MacBook-Pro Task-1 % time ./loop_invariants

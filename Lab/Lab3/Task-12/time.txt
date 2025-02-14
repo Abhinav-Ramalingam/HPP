@@ -1,0 +1,8 @@
+Length of Array	    Time Taken (in seconds)
+    10	                    0.000003
+    100	                    0.000014
+    1000	                0.000214
+    10000	                0.002811
+    100000	                0.023663
+    1000000	                0.148584
+    10000000            Segmentation fault

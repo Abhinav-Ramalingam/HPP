@@ -1,0 +1,14 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     galsim
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000032F0, symSize: 0x64C }
+  - { offsetInCU: 0xA6, offset: 0xA6, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x1000032F0, symSize: 0x64C }
+  - { offsetInCU: 0x23B, offset: 0x23B, size: 0x8, addend: 0x0, symName: _read_input, symObjAddr: 0x64C, symBinAddr: 0x10000393C, symSize: 0x9C }
+  - { offsetInCU: 0x289, offset: 0x289, size: 0x8, addend: 0x0, symName: _gravitational_force_net, symObjAddr: 0x6E8, symBinAddr: 0x1000039D8, symSize: 0x12C }
+  - { offsetInCU: 0x339, offset: 0x339, size: 0x8, addend: 0x0, symName: _acceleration, symObjAddr: 0x814, symBinAddr: 0x100003B04, symSize: 0x48 }
+  - { offsetInCU: 0x395, offset: 0x395, size: 0x8, addend: 0x0, symName: _velocity, symObjAddr: 0x85C, symBinAddr: 0x100003B4C, symSize: 0x50 }
+  - { offsetInCU: 0x3F1, offset: 0x3F1, size: 0x8, addend: 0x0, symName: _position, symObjAddr: 0x8AC, symBinAddr: 0x100003B9C, symSize: 0x50 }
+  - { offsetInCU: 0x44D, offset: 0x44D, size: 0x8, addend: 0x0, symName: _write_output, symObjAddr: 0x8FC, symBinAddr: 0x100003BEC, symSize: 0x94 }
+  - { offsetInCU: 0x49B, offset: 0x49B, size: 0x8, addend: 0x0, symName: _gravitational_force, symObjAddr: 0x990, symBinAddr: 0x100003C80, symSize: 0x10C }
+...

@@ -1,0 +1,43 @@
+TRANSPOSE_TEST:
+blockSz = 50:  
+do_transpose_mod_optimized 1 times for N=5000 took   0.038 wall seconds.
+
+blockSz = 100:  
+do_transpose_mod_optimized 1 times for N=5000 took   0.034 wall seconds.
+
+blockSz = 125:  
+do_transpose_mod_optimized 1 times for N=5000 took   0.036 wall seconds.
+
+blockSz = 200:  
+do_transpose_mod_optimized 1 times for N=5000 took   0.037 wall seconds.
+
+blockSz = 250: 
+do_transpose_mod_optimized 1 times for N=5000 took   0.036 wall seconds.
+
+blockSz = 500: 
+do_transpose_mod_optimized 1 times for N=5000 took   0.040 wall seconds.
+
+blockSz = 1000:  
+do_transpose_mod_optimized 1 times for N=5000 took   0.032 wall seconds.
+
+TRANSPOSE_TEST_X:
+blockSz = 50:  
+do_transpose_mod_optimized 1 times for N=3000 took   0.055 wall seconds.
+
+blockSz = 100:  
+do_transpose_mod_optimized 1 times for N=3000 took   0.046 wall seconds.
+
+blockSz = 125:  
+do_transpose_mod_optimized 1 times for N=3000 took   0.044 wall seconds.
+
+blockSz = 200:  
+do_transpose_mod_optimized 1 times for N=3000 took   0.043 wall seconds.
+
+blockSz = 250: 
+do_transpose_mod_optimized 1 times for N=3000 took   0.037 wall seconds.
+
+blockSz = 500: 
+do_transpose_mod_optimized 1 times for N=3000 took   0.028 wall seconds.
+
+blockSz = 1000:  
+do_transpose_mod_optimized 1 times for N=3000 took   0.026 wall seconds.

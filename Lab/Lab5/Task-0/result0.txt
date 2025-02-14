@@ -1,0 +1,11 @@
+time ./mallocycode
+User Time: 3.813s
+
+time ./regularcode
+User Time: 0.497s 
+
+time ./sleepycode
+User Time: 0.619s
+
+time ./threadedcode
+User Time: 1.021s

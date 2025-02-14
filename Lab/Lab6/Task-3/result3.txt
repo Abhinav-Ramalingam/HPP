@@ -1,0 +1,13 @@
+TESTFUNC2
+with restrict:
+transform_opt tests took   0.040 wall seconds.
+
+without restrict
+transform_opt tests took   0.043 wall seconds.
+
+TESTFUNC2 with N1 = 20
+with restrict:
+transform_opt tests took   0.003 wall seconds.
+
+without restrict:
+transform_opt tests took   0.003 wall seconds.

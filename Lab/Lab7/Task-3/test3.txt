@@ -1,0 +1,12 @@
+APPLY_STENCIL_V2:
+Default:
+Doing 400 iterations with N=232 using apply_stencil function version 2 took   0.134 wall seconds.
+
+Loop fusion:
+Doing 400 iterations with N=232 using apply_stencil function version 2 took   0.306 wall seconds.
+
+STENCIL_SZ = 20 to 4:
+Doing 400 iterations with N=200 using apply_stencil function version 2 took   0.015 wall seconds.
+
+
+Doing 400 iterations with N=200 using apply_stencil function version 3 took   0.033 wall seconds.

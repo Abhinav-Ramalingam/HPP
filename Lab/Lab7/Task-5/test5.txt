@@ -1,0 +1,9 @@
+F_OPT:
+Default:
+f_opt tests took   0.445 wall seconds.
+
+Changing the a[i]:
+f_opt tests took   0.445 wall seconds.
+
+Changing the a[i] and improving the IF condition:
+f_opt tests took   0.137 wall seconds.

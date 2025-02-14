@@ -1,0 +1,20 @@
+### 1. **What are the most time-consuming operations?**
+   - The most time-consuming operations are the matrix multiplication functions:
+     - `mul_ijk`: It consistently takes the most time across all tests, followed by `mul_jik`.
+     - Both functions account for a significant percentage of the total execution time, with `mul_ijk` being the largest contributor across most tests.
+
+### 2. **Which loop ordering is more efficient?**
+   - Based on the profiling results, `mul_ijk` and `mul_jik` are the most time-consuming operations, and they have very similar execution times. However, `mul_ijk` consistently takes slightly more time, implying that the loop ordering `ijk` might be marginally less efficient than `jik`. To determine the optimal loop ordering definitively, more specific testing would be required, but in general, different matrix multiplication algorithms may show different performances based on the loop ordering.
+
+### 3. **What is the most called function?**
+   - The most called function is `rand_int`, which is called 1.62 million times in every test. However, the time spent in `rand_int` is negligible, as it has no significant impact on the total runtime.
+
+### 4. **Does the profiler output time include time while waiting for user input?**
+   - No, the profiler output only includes the time the program spends executing functions and does not account for any time waiting for user input. The `rand_int` function and other non-matrix operations show no significant time usage, which indicates that the profiler is focused on the CPU-bound execution rather than waiting for I/O.
+
+### 5. **Which metric is used to order functions in the call graph?**
+   - The functions in the call graph are ordered based on the **total time spent** in each function and its children. This is the sum of the time spent directly in the function itself (`self` time) and the time spent in functions it calls (`children` time).
+
+### 6. **What are the self and children columns representing?**
+   - **Self**: The time spent directly in the function itself (excluding time spent in any functions it calls). This represents how much time the function spends executing its own logic.
+   - **Children**: The time spent in the functions that are called by the current function. This is the total time for all functions called by the current function, including recursive calls (if any).

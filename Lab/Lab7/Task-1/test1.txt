@@ -1,0 +1,21 @@
+F_OPT:
+Default:
+f_opt tests took   1.322 wall seconds.
+
+Loop Unrolling with Manual Unroll Factor = 2
+f_opt tests took   1.195 wall seconds.
+
+Loop Unrolling with Manual Unroll Factor = 4
+f_opt tests took   1.148 wall seconds.
+
+Loop Unrolling with -funroll-loops
+f_opt tests took   1.137 wall seconds.
+
+Loop Unrolling with -funroll-all-loops
+f_opt tests took   1.135 wall seconds.
+
+Loop Unrolling with -O2
+f_opt tests took   0.255 wall seconds.
+
+Loop Unrolling with -O3
+f_opt tests took   0.252 wall seconds.

@@ -1,0 +1,16 @@
+INTTYPE ONLY FOR LIST ELEMENTS
+char
+Sorting list with length 1045721 took   0.120 wall seconds.
+
+short int
+Sorting list with length 1045721 took   0.121 wall seconds.
+
+int 
+Sorting list with length 1045721 took   0.121 wall seconds.
+
+long int 
+Sorting list with length 1045721 took   0.125 wall seconds.
+
+long long
+Sorting list with length 1045721 took   0.129 wall seconds.
+
