@@ -1,0 +1,11 @@
+SERIAL IMPLEMENTATION:
+$ ./pi
+PI is approx. 3.1415926535899894
+
+PARALLEL IMPLEMENTATION:
+$ ./ppi
+PI is approx. 3.1415926535898682
+
+SERIAL IS SLIGHTLY MORE ACCURATE: 
+Adding a large number of smaller partial sums 
+    - Can introduce rounding errors due to the way floating-point numbers are handled in computer memory.

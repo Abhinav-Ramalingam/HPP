@@ -1,0 +1,19 @@
+$ ./thread_data
+This is the main() function starting.
+the main() function now calling pthread_create().
+This is the main() function after pthread_create()
+the main() function now calling pthread_join().
+The array elements are:
+5.700000, 9.200000, 1.600000
+
+$ ./thread_data_b 
+This is the main() function starting.
+The main() function now calling pthread_create() for the first thread.
+The main() function now calling pthread_create() for the second thread.
+This is the main() function after both threads are created.
+The main() function now calling pthread_join() for the first thread.
+The array elements are:
+5.700000, 9.200000, 1.600000
+The array elements are:
+3.100000, 7.400000, 8.800000
+The main() function now calling pthread_join() for the second thread.

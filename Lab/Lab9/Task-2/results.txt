@@ -1,0 +1,64 @@
+DoItNow = 1 COMMENTED OUT:
+$ ./wait_test 
+This is the main() function starting.
+the main() function now calling pthread_create().
+This is the main() function after pthread_create()
+This is thread_func() starting, now entering loop to wait until DoWorkNow is set...
+main thread did some work, x = 1.020201
+the main() function now calling pthread_join().
+
+(INFINITE RUNTIME)
+-----------------------------
+
+DoItNow = 1 UNCOMMENTED:
+$ ./wait_test 
+This is the main() function starting.
+the main() function now calling pthread_create().
+This is the main() function after pthread_create()
+This is thread_func() starting, now entering loop to wait until DoWorkNow is set...
+main thread did some work, x = 1.020201
+the main() function now calling pthread_join().
+This is thread_func() after the loop.
+This is the main() function after calling pthread_join().
+
+(FINITE RUNTIME)
+-----------------------------
+
+WAIT_TEST_COND DEFAULT:
+$ ./wait_test_cond 
+This is the main() function starting.
+the main() function now calling pthread_create().
+This is the main() function after pthread_create()
+This is thread_func() starting, now waiting for DoItNow to be set...
+main thread did some work, x = 1.020201
+the main() function now calling pthread_join().
+This is thread_func() after being signaled.
+This is the main() function after calling pthread_join().
+
+(FINITE RUNTIME)
+-----------------------------
+
+WAIT_TEST_COND SIGNAL COMMENTED OUT:
+$ ./wait_test_cond 
+This is the main() function starting.
+the main() function now calling pthread_create().
+This is the main() function after pthread_create()
+This is thread_func() starting, now waiting for DoItNow to be set...
+main thread did some work, x = 1.020201
+the main() function now calling pthread_join().
+
+(INFINITE RUNTIME)
+-----------------------------
+
+DoItNow looping logic = 
+real    0m10,786s
+user    0m21,550s
+sys     0m0,006s
+
+Conditional mutex logic =
+real    0m10,634s
+user    0m10,630s
+sys     0m0,004s
+
+When cond_signal removed =
+INFINITE LOOP

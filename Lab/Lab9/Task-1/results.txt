@@ -1,0 +1,13 @@
+$ ./threadtest
+This is the main() function starting.
+the main() function now calling pthread_create().
+This is the main() function after pthread_create()
+the main() function now calling pthread_join().
+Values returned from the thread: 10, 20, 30
+
+$ ./threadtestexit 
+This is the main() function starting.
+the main() function now calling pthread_create().
+This is the main() function after pthread_create()
+the main() function now calling pthread_join().
+Values returned from the thread: 10, 20, 30

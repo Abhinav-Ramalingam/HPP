@@ -1,0 +1,14 @@
+main = 800000000, thread = 0:
+    main = 2.481357 s, thread = 0.000000 s
+
+main = 700000000, thread = 100000000:
+    main = 2.173356 s, thread = 0.319089 s
+
+main = 600000000, thread = 200000000:
+    main = 1.864266 s, thread = 0.627684 s
+
+main = 500000000, thread = 300000000:
+    main = 1.555010 s, thread = 0.936500 s    
+
+main = 400000000, thread = 400000000:
+    main = 1.261662 s, thread = 1.261350 s

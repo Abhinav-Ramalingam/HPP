@@ -1,0 +1,40 @@
+N = 1000:
+Matmul time: 12.095390 wall seconds
+MatmulP time: 3.129365 wall seconds
+Speed up = 3.87
+
+N = 800: 
+Matmul time: 6.020642 wall seconds
+MatmulP time: 1.611493 wall seconds
+Speed up = 3.74
+
+N = 600:
+Matmul time: 1.932971 wall seconds
+MatmulP time: 0.541788 wall seconds
+Speed up = 3.57
+
+N = 400:
+Matmul time: 0.224116 wall seconds
+MatmulP time: 0.064981 wall seconds
+Speed up = 3.45
+
+N = 200:
+Matmul time: 0.021569 wall seconds
+MatmulP time: 0.007241 wall seconds
+Speed up = 2.98
+
+N = 100:
+Matmul time: 0.002195 wall seconds
+MatmulP time: 0.001440 wall seconds
+Speed up = 1.52
+
+N = 80:
+Elapsed time: 0.001259 wall seconds
+Elapsed time: 0.000678 wall seconds
+Speed up = 1.86
+
+N = 60:
+Matmul time: 0.000435 wall seconds
+MatmulP time: 0.000793 wall seconds
+Speed up = 0.55 
+    - So the speedup is 0.55, indicating that parallelization adds overhead and reduces performance for this small matrix size.

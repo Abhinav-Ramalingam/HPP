@@ -1,0 +1,25 @@
+THREADTEST1:
+$ ./threadtest1
+This is the main() function starting.
+the main() function now calling pthread_create().
+This is the main() function after pthread_create()
+main() starting doing some work.
+the_thread_func() starting doing some work.
+Result of work in main(): sum = 199.999992
+the main() function now calling pthread_join().
+Result of work in the_thread_func(): sum = 400.000022
+
+THREADTEST1B:
+$ ./threadtest1b 
+This is the main() function starting.
+the main() function now calling pthread_create() for thread A.
+the main() function now calling pthread_create() for thread B.
+This is the main() function after pthread_create()
+main() starting doing some work.
+the_thread_func() starting doing some work.
+the_thread_func_B() starting doing some work.
+Result of work in the_thread_func(): sum = 199.999992
+Result of work in main(): sum = 400.000022
+the main() function now calling pthread_join() for thread A.
+the main() function now calling pthread_join() for thread B.
+Result of work in the_thread_func_B(): sum = 600.000016

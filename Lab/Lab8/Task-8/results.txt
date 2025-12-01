@@ -1,0 +1,16 @@
+NO MUTEX:
+$ ./mt 4
+sum = 127356
+$ ./mt 4
+sum = 150597
+$ ./mt 4
+sum = 157853
+
+
+AFTER ADDING MUTEX:
+$ ./mtm 4
+sum = 400000
+$ ./mtm 4
+sum = 400000
+$ ./mtm 4
+sum = 400000

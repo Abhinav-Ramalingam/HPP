@@ -1,0 +1,23 @@
+Base program (Naive Algorithm):
+./prime 300000 1
+Execution time: 18.055046 seconds
+
+Multithreaded program (2 threads):
+./pprime 300000 2
+Execution time: 13.256104 seconds
+
+Multithreaded program (4 threads):
+./pprime 300000 4
+Execution time: 7.630127 seconds
+
+Multithreaded program (8 threads):
+./pprime 300000 8
+Execution time: 4.072334 seconds
+
+Multithreaded program (16 threads):
+./pprime 300000 16
+Execution time: 4.181800 seconds
+
+Multithreaded program (32 threads):
+./pprime 300000 32
+Execution time: 4.560348 seconds

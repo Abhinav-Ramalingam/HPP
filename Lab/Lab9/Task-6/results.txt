@@ -1,0 +1,7 @@
+ENUMSORT:
+$ ./enumsort 
+Time: 7.602703  NUM_THREADS: 5
+
+ENUMSORT but with chunks of elements per thread:
+$ ./enumsortc
+Time: 1.221283  NUM_THREADS: 5

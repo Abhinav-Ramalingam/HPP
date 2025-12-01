@@ -1,0 +1,9 @@
+$ ./hpt
+main() function starting. Thread ID: 140072936970048
+Parent thread 1 created by main thread 140072936965696
+Parent thread 2 created by main thread 140072928572992
+Child thread 11 created by thread 140072920180288
+Child thread 21 created by thread 140072842163776
+Child thread 12 created by thread 140072833771072
+Child thread 22 created by thread 140072825378368
+main() function ending.

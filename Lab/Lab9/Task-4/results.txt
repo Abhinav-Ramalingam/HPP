@@ -1,0 +1,70 @@
+SYNCH.C:
+$ ./synch 
+Hello World! 0
+Hello World! 4
+Hello World! 1
+Hello World! 3
+Hello World! 2
+Hello World! 6
+Hello World! 5
+Hello World! 7
+Bye Bye World! 7
+Bye Bye World! 0
+Bye Bye World! 4
+Bye Bye World! 2
+Bye Bye World! 5
+Bye Bye World! 6
+Bye Bye World! 3
+Bye Bye World! 1
+
+SPINWAIT.C:
+$ ./spinwait
+Hello World! 0
+Hello World! 1
+Hello World! 3
+Hello World! 2
+Hello World! 4
+Hello World! 6
+Hello World! 5
+Hello World! 7
+Bye Bye World! 4
+Bye Bye World! 2
+Bye Bye World! 0
+Bye Bye World! 7
+Bye Bye World! 1
+Bye Bye World! 3
+Bye Bye World! 5
+Bye Bye World! 6
+
+SPINWAIT.C With O3 Flag:
+$ ./spinwaito3 
+Hello World! 1
+Hello World! 3
+Hello World! 0
+Hello World! 4
+Hello World! 2
+Hello World! 5
+Hello World! 6
+Hello World! 7
+Bye Bye World! 7
+(INFINITE LOOP)
+
+
+SPINWAIT.C With O3 Flag AND VOLATILE VARIABLE INTRODUCTION:
+$ ./spinwaito3 
+Hello World! 0
+Hello World! 4
+Hello World! 5
+Hello World! 1
+Hello World! 6
+Hello World! 3
+Hello World! 7
+Hello World! 2
+Bye Bye World! 5
+Bye Bye World! 6
+Bye Bye World! 3
+Bye Bye World! 1
+Bye Bye World! 2
+Bye Bye World! 7
+Bye Bye World! 0
+Bye Bye World! 4
