@@ -1,0 +1,24 @@
+PRIVATE: (garbage values)
+$ ./ds
+a= 32536 b= 20
+a= 20 b= 20
+a= 20 b= 20
+a= 20 b= 20
+
+FIRSTPRIVATE: (Initialized in the parallel region with the value)
+$ ./ds
+a= 120 b= 20
+a= 120 b= 20
+a= 120 b= 20
+a= 120 b= 20
+
+LASTPRIVATE: (Without lastprivate) => Result fluctuates
+LASTPRIVATE: (With lastprivate) => Result is Always Same
+
+RESULTS:
+In firstprivate, each thread gets local private copy of the global variable. 
+So when the parallel region finishes, the original variable still holds its initial value, 
+unaffected by the parallel computation.
+
+In lastprivate, the last executed thread will copy back its private copy's value to the
+original global variable.

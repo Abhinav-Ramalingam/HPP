@@ -1,0 +1,76 @@
+EXECUTION:
+$ time ./program 80000 80 1
+N = 80000
+M = 80
+nThreads = 1
+nBytesA = 25600000
+finalSum = 2515060480.000000
+real    0m6,927s
+user    0m6,903s
+sys     0m0,024s
+
+$ time ./program 80000 80 4
+N = 80000
+M = 80
+nThreads = 4
+nBytesA = 25600000
+finalSum = 2515060480.000000
+real    0m2,079s
+user    0m7,514s
+sys     0m0,032s
+
+$ time ./program 800 8000 1
+N = 800
+M = 8000
+nThreads = 1
+nBytesA = 25600000
+finalSum = 2551640320.000000
+real    0m8,198s
+user    0m8,175s
+sys     0m0,023s
+
+$ time ./program 800 8000 4
+N = 800
+M = 8000
+nThreads = 4
+nBytesA = 25600000
+finalSum = 2551640320.000000
+real    0m2,524s
+user    0m9,380s
+sys     0m0,040s
+
+$ time ./program 8 800000 1
+N = 8
+M = 800000
+nThreads = 1
+nBytesA = 25600000
+finalSum = 536870912.000000
+real    0m5,893s
+user    0m5,873s
+sys     0m0,020s
+
+$ time ./program 8 800000 4
+N = 8
+M = 800000
+nThreads = 4
+nBytesA = 25600000
+finalSum = 536870912.000000
+real    0m2,446s
+user    0m8,907s
+sys     0m0,083s
+
+RESULTS:
+Case A: N=80000, M=80
+Time with 1 thread: 6.927s
+Time with 4 threads: 2.079s
+Speedup: 3.33
+
+Case B: N=800, M=8000
+Time with 1 thread: 8.198s
+Time with 4 threads: 2.524s
+Speedup: 3.25
+
+Case C: N=8, M=800000
+Time with 1 thread: 5.893s
+Time with 4 threads: 2.446s
+Speedup: 2.41

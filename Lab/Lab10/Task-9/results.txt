@@ -1,0 +1,35 @@
+NEST_LL (NESTED PARALLELISM DISABLED):
+$ ./nll
+Outer: Thread 2 says hello!
+Inner: Thread 0 says hello world!
+Outer: Thread 0 says hello!
+Inner: Thread 0 says hello world!
+Outer: Thread 1 says hello!
+Inner: Thread 0 says hello world!
+Outer: Thread 3 says hello!
+Inner: Thread 0 says hello world!
+
+NEST_LL (NESTED PARALLELISM ENABLED):
+$ ./nll
+Outer: Thread 0 says hello!
+Outer: Thread 2 says hello!
+Outer: Thread 3 says hello!
+Outer: Thread 1 says hello!
+Inner: Thread 0 says hello world!
+Inner: Thread 2 says hello world!
+Inner: Thread 1 says hello world!
+Inner: Thread 0 says hello world!
+Inner: Thread 2 says hello world!
+Inner: Thread 0 says hello world!
+Inner: Thread 1 says hello world!
+Inner: Thread 2 says hello world!
+Inner: Thread 1 says hello world!
+Inner: Thread 0 says hello world!
+Inner: Thread 1 says hello world!
+Inner: Thread 2 says hello world!
+
+MERGE_SORT PARALLEL:
+Number of threads: 1 => 15.189 seconds
+Number of threads: 2 => 7.780 seconds
+Number of threads: 4 => 7.796 seconds
+Number of threads: 8 => 7.848 seconds

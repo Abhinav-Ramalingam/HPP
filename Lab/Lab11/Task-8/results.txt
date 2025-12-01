@@ -1,0 +1,5 @@
+DEFAULT EXECUTION:
+$ ./tec 1000
+Time = 24.120161  
+$ ./tecp 1000
+Time = 5.501377

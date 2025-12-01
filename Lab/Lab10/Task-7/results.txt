@@ -1,0 +1,13 @@
+$ ./emp 20000000
+Number of primes up to 20000000: 1270607
+Execution time: 7.356568 seconds
+
+RESULTS:
+The problem occurs because compilers that do not support OpenMP cannot find the `omp.h` 
+header, causing a compilation error. This is particularly problematic when using compilers 
+like Clang, which may lack OpenMP support.
+
+To fix this, the code can check for the `_OPENMP` preprocessor macro before including 
+`omp.h` and calling OpenMP functions. This ensures that the program can compile both 
+with and without OpenMP support, allowing it to run in parallel if OpenMP is available 
+and serially if it is not.

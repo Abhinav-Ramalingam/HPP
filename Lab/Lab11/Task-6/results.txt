@@ -1,0 +1,8 @@
+PI.C (DEFAULT):
+Time taken: 4.870390 seconds
+
+PPI.C (THREADED VERSIONS):
+nThreads: 1 => 4.866185 seconds
+nThreads: 2 => 2.438434 seconds
+nThreads: 4 => 1.240555 seconds
+nThreads: 8 => 0.630050 seconds

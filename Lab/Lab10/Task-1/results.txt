@@ -1,0 +1,70 @@
+USING SIMPLE COMPILATION:
+$ gcc -o homp hello_openmp.c 
+$ ./homp
+Bonjour!
+
+ENABLING OPENMP:
+$ gcc -fopenmp -o homp hello_openmp.c 
+$ ./homp
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+
+CHANGING NUMBER OF THREADS TO 7:
+$ ./homp
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+
+JUST RUNNING WITH #PRAGMA OMP PARALLEL
+$ ./homp
+Bonjour! 
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+
+SETTING NUMBER OF THREADS WITH ENVIRONMENT VARIABLES:
+$ export OMP_NUM_THREADS=5
+$ echo $OMP_NUM_THREADS
+5
+$ ./homp
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+
+SETTING NUMBER OF THREADS WITH IN-BUILT FUNCTIONS = omp_set_num_threads(7):
+$ ./homp
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+Bonjour!
+
+Compiler priority:
+1. #pragma omp PARALLEL num_threads(N)
+2. omp_set_num_threads(N)
+3. export OMP_NUM_THREADS=N
+4. Default number of threads
+

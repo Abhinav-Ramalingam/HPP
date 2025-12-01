@@ -1,0 +1,27 @@
+DEFAULT EXECUTION:
+$ ./tdw
+Now I am going to do some work...
+Now I am going to do some work...
+Now I am going to do some work...
+Work done! My result j = 9000000000
+Work done! My result j = 9000000000
+Work done! My result j = 9000000000
+
+COMMAND LINE ARGS FOR THREADS AND ITERATIONS:
+1 THREAD:
+Elapsed time: 2.749522 seconds
+
+2 THREADS:
+Elapsed time: 2.788302 seconds  
+
+4 THREADS:
+Elapsed time: 2.771725 seconds  
+
+8 THREADS:
+Elapsed time: 2.826135 seconds  
+
+16 THREADS:
+Elapsed time: 11.388133 seconds  
+
+CONCLUSION:
+When the number of threads exceeds the number of available CPU cores, performance degrades due to the overhead of managing those threads and resource contention.

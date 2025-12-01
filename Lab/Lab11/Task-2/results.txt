@@ -1,0 +1,34 @@
+For 1 thread:
+$ time ./omps
+funcA() result: x = 1.648721
+funcB() result: x = 2.718282
+
+real    0m5,322s
+user    0m5,317s
+sys     0m0,004s
+
+For 2 threads:
+$ time ./omps
+funcA() result: x = 1.648721
+funcB() result: x = 2.718282
+
+real    0m2,671s
+user    0m5,324s
+sys     0m0,006s
+
+For 3 threads:
+$ time ./omps
+funcA() result: x = 1.648721
+funcB() result: x = 2.718282
+
+real    0m2,669s
+user    0m5,319s
+sys     0m0,012s
+
+SUMMARY:
+1 thread: The functions run sequentially, so the real time and user time are similar, and no parallelism is gained.
+2 threads: Both functions are executed in parallel, leading to a significant reduction in real time while the user time remains 
+the sum of both functions.
+3 threads: No additional parallelism is gained, as only two sections are available. The real time stays similar to the 2-thread 
+case, and the user time remains unchanged. However, there is a slight increase in sys time due to the overhead of creating an 
+extra unused thread.

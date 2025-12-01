@@ -1,0 +1,23 @@
+DEFAULT:
+$ ./loop 4
+Time taken: 5.325623 sec
+sum = 12497500.000000
+$ ./loop 4
+Time taken: 5.325456 sec
+sum = 12497500.000000
+RESULT: No Dependent Loop variables
+
+SCHEDULING STATIC:
+$ ./loop 4
+Time taken: 3.234707 sec
+sum = 12497500.000000
+
+SCHEDULING DYNAMIC:
+$ ./loop 4
+Time taken: 3.063210 sec
+sum = 12497500.000000
+
+SCHEDULING GUIDED:
+$ ./loop 4
+Time taken: 3.054442 sec
+sum = 12497500.000000

@@ -1,0 +1,14 @@
+Na = 800000000, NB = 0:
+Elapsed time: 2.093661 seconds
+
+Na = 700000000, NB = 100000000:
+Elapsed time: 1.967258 seconds
+
+Na = 600000000, NB = 200000000:
+Elapsed time: 1.633156 seconds
+
+Na = 500000000, NB = 300000000:
+Elapsed time: 1.331860 seconds
+
+Na = 400000000, NB = 400000000:
+Elapsed time: 1.140131 seconds

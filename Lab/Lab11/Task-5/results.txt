@@ -1,0 +1,34 @@
+CRITICAL:
+$ ./reduce 1
+Global sum is: 499999500000.000000
+Time: 1.843206
+
+$ ./reduce 2
+Global sum is: 499999500000.000000
+Time: 0.913802
+
+$ ./reduce 4
+Global sum is: 499999500000.000000
+Time: 0.463740
+
+$ ./reduce 8
+Global sum is: 499999500000.000000
+Time: 0.238317
+
+REDUCTION:
+$ ./reduce 4
+Global sum is: 199999800000000.000000
+Time: 0.470157
+
+$ ./reduce 4
+Global sum is: 199999800000000.000000
+Time: 0.470218
+
+RESULTS:
+#pragma omp critical
+Explanation: Ensures that the code inside the block is executed by only one thread at a time, 
+preventing race conditions.
+
+#pragma omp parallel for reduction(+:sum) num_threads(nThreads)
+Explanation: Ensures each thread has a private copy of `sum`, 
+and these private sums are combined into the original `sum` after the parallel loop completes.

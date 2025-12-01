@@ -1,0 +1,28 @@
+DEFAULT 
+$ ./prime 20000000
+Number of primes up to 20000000: 1270607
+Execution time: 16.050206 seconds
+
+EQUALLY SPLITTING LOAD BETWEEN THREADS:
+$ ./pn 20000000 8
+Number of primes up to 20000000: 1270607
+Execution time: 4.456111 seconds
+
+FOR LOAD-BALANCING WE NEED TO USE DYNAMIC SCHEDULING:
+$ ./plb 20000000 8
+Number of primes up to 20000000: 1270607
+Execution time: 3.554476 seconds
+
+2 THREADS to N THREADS (WITHOUT LOAD BALANCE):
+$ ./pn 20000000 1 = 25.540268 seconds
+$ ./pn 20000000 2 = 16.029313 seconds
+$ ./pn 20000000 4 = 8.622155 seconds
+$ ./pn 20000000 8 = 4.459981 seconds
+$ ./pn 20000000 16 = 5.936384 seconds (MORE TIME TAKEN - overhead of managing those threads)
+
+2 THREADS to N THREADS (WITH LOAD BALANCE):
+$ ./pn 20000000 1 = 25.603729 seconds (PRETTY MUCH NO DIFFERENCE)
+$ ./pn 20000000 2 = 12.826361 seconds
+$ ./pn 20000000 4 = 6.515107 seconds
+$ ./pn 20000000 8 = 3.543950 seconds
+$ ./pn 20000000 16 = 6.265536 seconds (SAME CASE)

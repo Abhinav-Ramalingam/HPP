@@ -1,0 +1,24 @@
+SIMPLE-LOOP:
+WITHOUT OPENMP ENABLING:
+$ time ./sl
+sum = 19999.749173
+real    0m5,318s
+user    0m5,314s
+sys     0m0,005s
+
+WITH OPENMP ENABLING:
+$ time ./sl
+sum = 19999.749173
+real    0m1,796s
+user    0m5,329s
+sys     0m0,011s
+
+
+OTHER-LOOP:
+ADDING THE PRAGMA FOR:
+$ ./ol
+sum = 71368.396295
+$ ./ol
+sum = 70564.888744
+$ ./ol
+sum = 72038.613446

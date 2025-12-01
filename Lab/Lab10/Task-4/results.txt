@@ -1,0 +1,8 @@
+CALCULATION INSIDE THREAD:
+$ ./omptest 
+This is inside thread_func()!
+Thread 0 processing struct with A=3.700000, B=1.200000, x=88, y=77
+Thread 0 computed result: 808.50
+This is inside thread_func()!
+Thread 1 processing struct with A=2.200000, B=8.800000, x=444, y=555
+Thread 1 computed result: 10989.00

@@ -1,0 +1,8 @@
+==1752557== LEAK SUMMARY:
+==1752557==    definitely lost: 0 bytes in 0 blocks
+==1752557==    indirectly lost: 0 bytes in 0 blocks
+==1752557==      possibly lost: 4,320 bytes in 15 blocks
+==1752557==    still reachable: 5,264 bytes in 4 blocks
+==1752557==         suppressed: 0 bytes in 0 blocks
+
+Result: With OpenMP programs, memory leaks might still occur no matter how properly the allocated memory is freed.
