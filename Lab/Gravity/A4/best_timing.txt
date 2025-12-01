@@ -1,0 +1,4 @@
+Fastest Time in seconds (PThreads, 5000 particles, 100 timesteps, deltaT = 1e-5):  3.527355
+Fastest Time in seconds (OpenMP, 5000 particles, 100 timesteps, deltaT = 1e-5):  1.956039
+Intel(R) Xeon(R) CPU           E5520  @ 2.27GHz
+Used Number of Threads: 8

@@ -1,0 +1,2 @@
+Best Time: 5.60 seconds
+Model name: Intel(R) Xeon(R) CPU E5520 @ 2.27GHz
